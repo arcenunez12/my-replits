@@ -1,0 +1,277 @@
+/* DEBUG */
+/* * {
+    background-color: black !important;
+    color: black !important;
+    border: 2px solid red !important;
+} */
+
+#blue {
+    color:blue;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Archivo', sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 1.5px;
+  }
+  
+  header {
+    background-color: #014F86;
+    height: 100px;
+    border-radius: 5px;
+    font-family: 'Archivo', sans-serif;
+    margin: 0;
+  }
+  
+  nav ul {
+    background-color: #2A6F97;
+    box-sizing: border-box;
+    /* width: 100%;
+    height: 50px; */
+    margin: 0;
+    padding-top: 10px;
+    list-style: none;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  nav li {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 25px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .hero-image {
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("https://www.hotelscombined.com/news/wp-content/uploads/sites/314/2020/07/Atlantis-The-Palm-Dubai.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 90vh;
+    margin: 0;
+    /* border: 5px solid red; */
+  }
+  
+  .hero-text {
+    text-align: center;
+    margin: 0;
+  }
+  
+  .hero-text h1 {
+    font-size: 100px;
+    color: white;
+    font-family: 'Lobster', cursive;
+    /* margin: 0; */
+    /* font-weight: 700 bold; */
+  }
+  
+  .hero-text h2 {
+    font-size: 50px;
+    color: white;
+  }
+  
+  .about-us {
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+  
+  .about-us p {
+    font-family: 'Archivo', sans-serif;
+    /* margin-right: 100px; */
+    font-size: 23px;
+  }
+  
+  .about-us h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 45px;
+    /* font-weight: 700 bold; */
+    color: #01497C;
+  }
+  
+  .about-us h2 {
+    font-size: 40px;
+    color: #468FAF;
+  }
+  
+  .float {
+    width: 280px;
+    height: auto;
+    float: left;
+    margin-right: 15px;
+    box-sizing: border-box;
+  }
+  
+  .hotel-rooms {
+    /* text-align: center; */
+    /* background-color: #89C2D9; */
+    /* background-color: #014F86; */
+    background-color: #2A6F97;
+    /* margin-bottom: 20px; */
+    margin: 0;
+    /* border: 5px solid red; */
+    padding-bottom: 30px;
+    /* padding-top: 20px; */
+    width: 100vw;
+    box-sizing: border-box;
+    /* margin: 0; */
+    /* justify-content: space-between; */
+    /* padding-top: 20px; */
+    /* border: 10px red solid; */
+  }
+  
+  .hotel-rooms h1 {
+    font-family: 'Lobster', cursive;
+    /* margin: 100px; */
+    /* margin-top: 15px; */
+    /* margin-bottom: 20px; */
+    /* border: solid 5px red; */
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+  }
+  
+  .rooms {
+    display: flex;
+    justify-content: space-around;
+    /* overflow: hidden; */
+    /* text-align: center; */
+  }
+  
+  .rooms h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  
+  .rooms #room1, #room2, #room3 {
+    border: 5px white solid;
+    /* background-color: #01497C; */
+    /* background-color: #2A6F97; */
+    background-color: #014F86;
+    color: white;
+    border-radius: 10px;
+    width: 300px;
+    padding: 10px;
+    /* overflow: hidden; */
+    /* text-align: center; */
+    /* display: inline-block; */
+    /* margin: 0; */
+  }
+  
+  .rooms p {
+    font-size: 20px;
+  }
+  
+  .rooms img {
+    width: 300px;
+  }
+  
+  figure {
+    margin: 0;
+    overflow: hidden; 
+  }
+   
+  
+  .hover figure img {
+      transform: scale(1.5);
+      transition: .3s ease-in-out;
+  }
+  .hover figure:hover img {
+      transform: scale(1);
+  }
+  
+  .free-trip {
+    /* border: solid pink 10px; */
+    margin: 0 0 25px 0;
+    width: 100vw;
+    text-align: center;
+    /* padding: 25px 0 25px 20px; */
+    /* padding-left: 20px;
+    padding-bottom: 20px; */
+  }
+  
+  .free-trip h1 {
+    font-family: 'Lobster', cursive;
+    color: #01497C;
+    font-size: 40px;
+    /* padding-left: 10px;
+    padding-bottom: 10px; */
+    padding: 0 0 10px 10px;
+    margin: 15px 0 0 6px;
+  }
+  
+  .free-trip p, label {
+    font-size: 25px;
+    margin: 0 0 0 6px;
+    /* padding-left: 10px;
+    padding-bottom: 10px; */
+    padding: 0 0 10px 10px;
+  }
+  
+  .free-trip input {
+    font-size: 25px;
+    margin: 0 0 0 6px;
+    padding: 10px 10px 10px 10px;
+    /* padding-left: 10px;
+    padding-bottom: 10px; */
+    border-radius: 10px;
+  }
+  
+  
+  /* .free-trip form * {
+    border-radius: 10px;
+    padding: 10px;
+  } */
+  
+  .free-trip form button {
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    font-size: 25px;
+  }
+  
+  .btn-hover {
+      /* width: 100px; */
+      font-size: 20px;
+      /* font-weight: 600; */
+      color: #fff;
+      cursor: pointer;
+      margin: 10px;
+      height: auto;
+      text-align:center;
+      border: none;
+      background-size: 300% 100%;
+  
+      border-radius: 5px;
+      moz-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      -webkit-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+  }
+  
+  .btn-hover:hover {
+      background-position: 100% 0;
+      moz-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      -webkit-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+  }
+  
+  .btn-hover:focus {
+      outline: none;
+  }
+  
+  .btn-hover.color-button {
+      background-image: linear-gradient(to right, #01497C, #89C2D9, #01497C, #89C2D9);
+      box-shadow: 0 4px 15px 0 rgba(0, 0, 100, 0.5);
+  }

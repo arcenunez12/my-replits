@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="milestone" content="Foster-Pet">
+    <script src="https://tinyurl.com/2p9w5adj"></script>
+    <title>Foster A Pet</title>
+    <!-- Link for the css file -->
+    <link href="style.css" rel="stylesheet"  type="text/css" /> 
+  </head>
+  
+  <body>
+    <header>
+      <h1>Sign Up to Foster a Pet</h1>
+      <!-- Extend Your Website.
+      The animal rescue organization requested that you add a table of
+      available pets just below the page's header. -->
+      
+      <!-- Table element begins -->
+      <table>
+        <!-- There are a total of 6 rows. -->
+
+        <!-- Header rows begin-->
+        <thead>
+          <!-- First header row -->
+          <tr>
+            <th colspan="4">Available Pets</th>
+          </tr>
+          <!-- Second header row -->
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Breed</th>
+            <th scope="col">Picture</th>
+          </tr>
+        <!-- Header rows end -->
+        </thead>
+        
+        <!-- Body rows begin -->
+        <tbody>
+          <!-- Benny's info -->
+          <tr>
+            <td>Benny</td>
+            <td>2</td>
+            <td>Golden Retriever</td>
+            <td>
+              <img src="https://retrieveradvice.com/wp-content/uploads/2022/10/2-Year-Old-Golden-Retriever-1-1.jpg" alt="Benny the golden retriever"
+                title="Benny the golden retriever">
+            </td>
+          </tr>
+          <!-- Felix's info -->
+          <tr>
+            <td>Felix</td>
+            <td>5</td>
+            <td>Orange Tabby</td>
+            <td>
+              <img src="https://resources.bestfriends.org/sites/default/files/styles/large/public/2022-11/17_Desmond_LF_794A6656_video.jpg?itok=q4Zyy7HV" alt="Felix the orange tabby cat"
+                title="Felix the orange tabby cat">
+            </td>
+          </tr>
+          <!-- Cooper's info -->
+          <tr>
+            <td>Cooper</td>
+            <td>8</td>
+            <td>German Shepard</td>
+            <td>
+              <img src="https://b3117286.smushcdn.com/3117286/wp-content/uploads/2021/08/German-shepherd-running-outside.jpg?lossy=1&strip=1&webp=1"
+                alt="Cooper the German Shepard"
+                title="Cooper the German Shepard">
+            </td>
+          </tr>
+          <!-- Anna's info -->
+          <tr>
+            <td>Anna</td>
+            <td>3</td>
+            <td>Long-Haired Dachshund</td>
+            <td>
+              <img src="https://www.purina.com.au/-/media/project/purina/main/breeds/dog/mobile/dog_dachshund-miniature-long-haired_mobile.jpg?h=300&la=en&w=375&hash=C21844CCE7DD084E8D90B9D427F97693"
+                alt="Anna the Long Haired Dachshund"
+                title="Anna the Long-Haired Dachshund">
+            </td>
+          </tr>
+        <!-- Body rows end -->
+        </tbody>
+      <!-- Table element ends -->
+      </table>
+      
+      <img src="assets/dog.png" alt="Cute Dog Looking Over Form" width="40%">
+    </header>
+
+    
+
+    <!-- Form element begins -->
+    <form>
+      <!-- Full Name label and input tags.
+      This helps to indicate to the user what they need to put
+      in this box. -->
+      <label for="name">Full Name</label>
+      <!-- Remember, the for and id attributes must be the same for the 
+      label and input tags. -->
+      <input id="name" type="text" placeholder="Jane Doe" name="name">
+
+      <!-- Date of Birth label and input tags -->
+      <label for="dob">Date of Birth</label>
+      <input id="dob" type="date" name="dob">
+
+      <!-- Email label and input tags -->
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="example@domain.com" name="email">
+
+      <!-- Password label and input tags -->
+      <label for="pw">Password</label>
+      <input id="pw" type="password" name="password">
+
+      <!-- Number of Pets label and input tags -->
+      <label for="num-pets">Number of Pets</label>
+      <!-- We added in the attribute min="0" b/c it would not make
+      sense to have a negative number of pets. -->
+      <input id="num-pets" type="number" min="0" name="num-pets">
+
+      <!-- Here is a new input type that we have not seen in our
+      demo videos before. 
+      These are radio boxes in which only ONE can be selected at a time. -->
+      <!-- Insted of a label, we will use an h4 tag b/c we will need the 
+      label tag for something else. -->
+      <h4>Have you fostered before?</h4>
+      <!-- Now we start the label tag. This label will actually encompass
+      the input itself. -->
+      <label for="yes">
+        <!-- We add in a closing input tag. This is the first input type
+        on our page where our input tag has an opening and a closing tag
+        instead of just being a self-closing tag. -->
+        <input id="yes" type="radio" name="prev-experience">Yes</input>
+      </label>
+
+      <!-- Now we need a no radio button -->
+      <label for="no">
+        <input id="no" type="radio" name="prev-experience">No</input>
+      </label>
+      <!-- This is not the only way to set up radio buttons. This
+      is just an accessible way to compose the code given the specific
+      scenario we are gathering data in. This is a generally good practice. -->
+
+      <!-- To make sure that we can only click one radio button, we need
+      to add in the name attribute to the two inputs. 
+      The name attribute must be indicitative of the purpose of the 
+      data we are gathering. 
+      In this case we have called it prev-experience. This name attribute
+      must be the same for both inputs. 
+      What this does is tell the browser that these are two radio buttons 
+      that are answers to the SAME question.
+      The name is usually going to be the same thing as our id and for
+      labels. It can be different if we want it to. -->
+
+      <!-- Now onto the check boxes -->
+      <h4>Which of these apply to your home?</h4>
+      <!-- Unlike the radio buttons, each checkbox is INDEPENDENT of each other.
+      So all, a couple, or none of them can be selected. 
+      So we go back to our original format of putting a label and then the
+      input tag. -->
+      <!-- Apartment label and input tag -->
+      <label for="apartment">Apartment</label>
+      <input id="apartment" type="checkbox" name="apartment">
+      <!-- Children label and input tag -->
+      <label for="children">Children</label>
+      <input id="children" type="checkbox" name="children">
+      <!-- Yard label and input tag -->
+      <label for="yard">Yard</label>
+      <input id="yard" type="checkbox" name="yard">
+
+      <!-- Now we need a Sign Up button -->
+      <input type="submit" value="Sign Up!">
+
+    <!-- Form element ends -->
+    </form>
+
+  </body>
+</html>

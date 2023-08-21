@@ -1,0 +1,190 @@
+
+body {
+    /* background-color: #E7CBCB; */
+    /* Reset the margin on the body
+    This is a CSS Reset. A collection of CSS rules that refresh to the 
+    default style's settings set by the browser.
+    So that space we saw earlier is now gone. */
+    margin: 0;
+    font-family: 'Merriweather', serif;
+  }
+  
+  /* Make our header a little larger. */
+  header {
+    background-color: #643843;
+    /* Now we can see that header better and how much space it takes 
+    up vertically. 
+    But, these nav items ares still overlapping our image. Let's fix that. */
+    height: 100px;
+    border-radius: 25px;
+  }
+  
+  img {
+    /* background-color: #C88EA7; */
+    height: 60px;
+    /* Take the logo image out of the flow. 
+    We do this with the following code. */
+    position: absolute;
+    /* How far we want the logo img to be away from the top
+    of the website. ;*/
+    top: 20px;
+    /* How far we want the logo img to be away from the left
+    of the website. ;*/
+    left: 20px;
+    /* The img currently overlaps over other content. */
+  
+    border-radius: 8px;
+  }
+   
+  .nav ul {
+    background-color: #99627A;
+    /* Let's take off some of the normal properties that are on an 
+    unordered list. */
+    /* To remove the bullet points. */
+    list-style: none;
+    /* 0 out the margin and the padding. This will move it into a tight 
+    list that is one on top of each other. Remember, these list items
+    are block elements so they each take up the whole line. 
+    We can change the way they are displayed though. 
+    /* Align these elements with out logo on the left. We do this by 
+    adding some padding. */
+    margin: 0;
+    /* 20px on the top. */
+    padding: 20px 0 0 0 ;
+    /* We see that the li elements moved to the center of the page b/c 
+    they are actiong and flowing like text now that they are inline block. */
+    text-align: right;
+    /* Make the border-radius for the unorder list. */
+    border-radius: 25px;
+    
+  }
+  
+  /* We change that display with the following code. */
+  .nav li {
+    /* background-color: blue; */
+    display: inline-block;
+    /* Size and space out those li elements. 
+    Change the spacing around these elements. 
+    We are going to add padding of 20px all around. This provides
+    a little breathing room. */
+    padding: 20px;
+    /* Let's also add some margin to get these elements to be spaced out 
+    from each other without adding more blue to it. We do this by adding 
+    margin. */
+    /* 0 for the top and bottom, 10px for left and right. */
+    margin: 0 10px;
+  }
+   
+  .nav a {
+    /* background-color: orange; */
+    color: #E7CBCB;
+    text-decoration: none;
+  }
+  
+  section {
+    /* background-color: black; */
+    /* That container for the two boxes has shrunk. */
+    width: 840px;
+    /* Center the two boxes to be in the center of the page.
+    0 on the top and bottom. Auto on the left and right. */
+    /* Now let's change this once again so that it moves it a
+    little bit away from the header. 
+    50px on top, auto of the right, 0px on the bottom, auto on the left. */
+    margin: 50px auto 0 auto;
+    /**/
+  }
+  
+  /* Get both of these elements on the same line. */
+  .section-box {
+    display: inline-block;
+    /* Make the two boxes the same size.
+    Now both boxes are 400px wide and 300px tall, BUT they are not really
+    aligned. The first box is aligned to the top of its container, but the
+    second box isn't. Since they are treated more like text now, we can use
+    the vertical align property to fix that. */
+    width: 400px;
+    height: 300px;
+    vertical-align: top;
+    box-sizing: border-box;
+  }
+  
+  #quote-offer-container {
+    /* background-color: blue; */
+    background-color: #f5c9dc ;
+    /* We have 840px in our section. And each box is only 400px wide. So
+    we have 40 extra pixels, so we will add that as a margin for the left 
+    box (the quote offer container). The reason we got rid of the space in the
+    HTML is b/c we can now do calculations like this where we can things pixel 
+    perfect. */
+    margin-right: 40px;
+    text-align: center;
+  }
+  
+  #quote-form-container {
+    /* background-color: #C88EA7; */
+    /* Add padding to the form container itself. 
+    20px all around (top right bottom and left).
+    At first, it doesn't look quite right. The orange box took up more space
+    even though in the .section-box we set it to 400px for width. 
+    This has to do with how it's calculating those 400px. It is calculating it
+    by only using the content so it is not including the padding or the 
+    border. 
+    We can fix that so that it calculates it by using the padding and border as
+    well as the content by changing the box-sizing property in the .section-box
+    rule. 
+    */
+    padding: 20px;
+    /* Try to align the top of this orange box with the top of the
+    text. 
+    It is now aligned. But there is a problem where b/c we've pushed this
+    down from the top, also its height no longer makes sense. */
+    margin-top: 30px;
+    /* So let's change the height to make it look more symmetrical. */
+    height: 200px;
+    border-radius: 25px;
+    /* outline-style: 5px solid #c78ea7; */
+    border: 5px solid #c78ea7;
+    outline: 8px solid #643843;
+    
+  }
+  
+  #quote-form {
+    /* background-color: salmon; */
+  }
+  
+  /* Style the form field class. */
+  .form-field {
+    /* Margin bottom on 15px. This gives some nice space. */
+    margin-bottom: 15px;
+    /* Now center it in the form itself. */
+    text-align: center;
+    color: white;
+  }
+  
+  
+  button {
+    border: none;
+    background-color: #643843;
+    color: white;
+    height: 40px;
+    width:  80px;
+    border-radius: 25px;
+    align-items: right;
+    position: static;
+  }
+  
+  /* Hero Image code */
+  .hero-image {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://images.bizbuysell.com/shared/listings/208/2081149/1f74791d-6fda-477b-af24-bac679ed2469-W768.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    /* display: flex;
+    justify-content: inherit;
+    align-items: inherit; */
+  }
+  
+  
+  

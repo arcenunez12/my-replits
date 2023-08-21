@@ -1,0 +1,33 @@
+body {
+    height: 100vh;
+    background-image: linear-gradient(#ffb5b5, #ffe7e7);
+  }
+  
+  .row {
+    margin: 4vh 0;
+  }
+  
+  /* .col {
+    border: red 5px solid;
+  } */
+  
+  /* .btn-primary {
+    border: red 5px solid;
+  }
+   */
+  input {
+    height: 40px;
+    text-align: center;
+  }
+  
+  textarea {
+    /* 80% of the container. This is really 80% of half of the 
+    Bootstrap container. */ 
+    width: 80%;
+    height: 120px;
+  }
+  
+  textarea::placeholder {
+    text-align: center;
+    line-height: 60px;
+  }
